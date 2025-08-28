@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """a module that handle standard opperators"""
-
+nom1 = ("Enter the first number;")
+nom2 = ("Enter the first nuumber;")
 print(f"Addition: {num1} + {num2} = {num1 + num2}")
 print(f"Subtraction: {num1} - {num2} = {num1 - num2}")
 print(f"Multiplication: {num1} * {num2} = {num1 * num2}")
