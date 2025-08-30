@@ -1,25 +1,41 @@
 #!/usr/bin/python3
 """a module to create a standard assignment"""
-    
-print("Enter the first number:")
-num1 = float(input())
-print("Enter the second number:")
-num2 = float(input())
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+print("\n--- Assignment Operations ---")
+
+    # Simple Assignment (=)
 x = num1
 print(f"x = num1: x is now {x}")
-x -= num2  
-x = num1 
-print("Cannot perform x /= num2: Division by zero.")
-x = num1 
-num2 != 0
-x %= num2  
+
+    # Add and Assign (+=)
+x += num2  # Equivalent to x = x + num2
+print(f"x += num2: x is now {x}")
+
+    # Subtract and Assign (-=)
+x -= num1  # Equivalent to x = x - num1
+print(f"x -= num1: x is now {x}")
+
+    # Multiply and Assign (*=)
+x *= num2  # Equivalent to x = x * num2
+print(f"x *= num2: x is now {x}")
+
+    # Divide and Assign (/=)
+x /= num1  # Equivalent to x = x / num1
+print(f"x /= num1: x is now {x}")
+
+    # Modulus and Assign (%=)
+x = num1 # Reset x for a clear modulus example
+x %= num2 # Equivalent to x = x % num2
 print(f"x %= num2: x is now {x}")
-print("Cannot perform x %= num2: Division by zero.")
-x = num1 
-num2 != 0
-x //= num2  
+
+    # Floor Divide and Assign (//=)
+x = num1 # Reset x for a clear floor division example
+x //= num2 # Equivalent to x = x // num2
 print(f"x //= num2: x is now {x}")
-print("Cannot perform x //= num2: Division by zero.")
-x = num1 
-x **= num2 
-print(f"x **= num2: x is now {x}")
+
+    # Exponentiate and Assign (**=)
+x = num1 # Reset x for a clear exponentiation example
+power = 2 # Define a small power for demonstration
+x **= power # Equivalent to x = x ** power
+print(f"x **= {power}: x is now {x}")
